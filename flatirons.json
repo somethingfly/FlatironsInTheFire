@@ -1,0 +1,28 @@
+{
+  "flatirons": [
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/setting-up-wsl2?module_item_id=382243",
+      "quote": "the dropdown in the terminal that says \"1: powershell\" ",
+      "comment": "Change to: the \"+\" dropdown in the terminal next to \"powershell\"",
+      "id": 1
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/installing-node-dot-js-on-wsl2?module_item_id=382244",
+      "quote": "Action Item 2",
+      "comment": "Add: Note, you can paste into Ubuntu using Ctrl+Shift+V, but you may need to enable the option in Properties, which is accessible by right clicking the top menu bar of the Ubuntu appliaction (https://stackoverflow.com/questions/38832230/copy-paste-in-bash-on-ubuntu-on-windows/50050642#50050642)",
+      "id": 2
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/windows-wsl2-ruby-installation?module_item_id=382245",
+      "quote": "Type gem update --system and press <Enter>",
+      "comment": "Add: Note, this step can take several minutes, though it may appear \"stuck\" on the line containing \"Installing darkfish documentation for rubygems-update\".  After the installation is successful, if you cannot type the next step, close and reopen Ubuntu.",
+      "id": 3
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/configuring-git-and-github-on-wsl2?module_item_id=382246",
+      "quote": "Type \"My personal PC\"",
+      "comment": "Change to: Type \"My PC\" ||| (Or is this a joke??? Does it later get mentioned in the class on Recursion? If so you can take that joke to the bank and deposit it into the ATM Machine.)",
+      "id": 4
+    }
+  ]
+}
