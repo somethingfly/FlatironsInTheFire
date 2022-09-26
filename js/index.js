@@ -8,43 +8,35 @@ document.addEventListener("DOMContentLoaded", () => {
     const forward = document.getElementById("forward");
     const urlDropdown = document.getElementById("url-dropdown");
     const githubUrlDropdown = document.getElementById("github-url-dropdown");
+    fetchFlatirons();
+    createFlatironForm();
     back.addEventListener("click", function () {
         if (currentPage > 1) {
             currentPage--;
-            fetchFlatirons();
+            fetchFlatirons(urlDropdown.value,githubUrlDropdown.value);
         }
     });
     forward.addEventListener("click", function () {
         currentPage++
-        fetchFlatirons();
+        fetchFlatirons(urlDropdown.value,githubUrlDropdown.value);
     });
     urlDropdown.addEventListener("change", function () {
         githubUrlDropdown.value = "";
-        currentPage = 0;
-        if ((urlDropdown.value == "none") || (!(urlDropdown.value))) {
-            fetchFlatirons();
-        } else {
-            fetchFlatirons(urlDropdown.value);
-        }
+        currentPage = 1;
+        fetchFlatirons(urlDropdown.value,githubUrlDropdown.value);
     });
     githubUrlDropdown.addEventListener("change", function () {
         urlDropdown.value = "";
-        currentPage = 0;
-        if ((githubUrlDropdown.value == "none") || (!(githubUrlDropdown.value))) {
-            fetchFlatirons();
-        } else {
-            fetchFlatirons(null,githubUrlDropdown.value);
-        }
+        currentPage = 1;
+        fetchFlatirons(urlDropdown.value,githubUrlDropdown.value);
     });
-    fetchFlatirons();
-    createFlatironForm();
 });
 
 function fetchFlatirons(url="",githubUrl="") {
     let fetchUrl = new URL(flatironJsonUrl + "/flatirons/?_limit=50&_page=" + currentPage);
-    if (url) {
+    if ((url) && (url != "none")) {
         fetchUrl += "&" + new URLSearchParams({"url": url});
-    } else if (githubUrl) {
+    } else if ((githubUrl) && (githubUrl != "none")) {
         fetchUrl += "&" + new URLSearchParams({"githuburl": githubUrl});
     }
     fetch(fetchUrl)
