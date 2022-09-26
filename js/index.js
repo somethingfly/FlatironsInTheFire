@@ -1,25 +1,53 @@
 const flatironJsonUrl = "http://localhost:3000"
 let currentPage = 1;
+const urlObj = {};
+const githubUrlObj = {};
 
 document.addEventListener("DOMContentLoaded", () => {
     const back = document.getElementById("back");
     const forward = document.getElementById("forward");
+    const urlDropdown = document.getElementById("url-dropdown");
+    const githubUrlDropdown = document.getElementById("github-url-dropdown");
     back.addEventListener("click", function () {
         if (currentPage > 1) {
             currentPage--;
             fetchFlatirons();
         }
-    });    
+    });
     forward.addEventListener("click", function () {
         currentPage++
         fetchFlatirons();
+    });
+    urlDropdown.addEventListener("change", function () {
+        githubUrlDropdown.value = "";
+        currentPage = 0;
+        if ((urlDropdown.value == "none") || (!(urlDropdown.value))) {
+            fetchFlatirons();
+        } else {
+            fetchFlatirons(urlDropdown.value);
+        }
+    });
+    githubUrlDropdown.addEventListener("change", function () {
+        urlDropdown.value = "";
+        currentPage = 0;
+        if ((githubUrlDropdown.value == "none") || (!(githubUrlDropdown.value))) {
+            fetchFlatirons();
+        } else {
+            fetchFlatirons(null,githubUrlDropdown.value);
+        }
     });
     fetchFlatirons();
     createFlatironForm();
 });
 
-function fetchFlatirons() {
-    fetch(flatironJsonUrl + "/flatirons/?_limit=50&_page=" + currentPage)
+function fetchFlatirons(url="",githubUrl="") {
+    let fetchUrl = new URL(flatironJsonUrl + "/flatirons/?_limit=50&_page=" + currentPage);
+    if (url) {
+        fetchUrl += "&" + new URLSearchParams({"url": url});
+    } else if (githubUrl) {
+        fetchUrl += "&" + new URLSearchParams({"githuburl": githubUrl});
+    }
+    fetch(fetchUrl)
         .then((resp) => resp.json())
         .then((flatirons) => renderFlatirons(flatirons));
 }
@@ -29,7 +57,25 @@ function renderFlatirons(flatirons) {
     while (flatironContainer.firstChild) {
         flatironContainer.removeChild(flatironContainer.firstChild);
     };
-    flatirons.forEach(flatiron => {renderFlatiron(flatiron.id,flatiron.url,flatiron.quote,flatiron.comment,flatiron.datetime,flatiron.githuburl)});
+    flatirons.forEach(flatiron => {
+        let urlOption
+        let githubUrlOption
+        const urlDropdown = document.getElementById("url-dropdown");
+        const githubUrlDropdown = document.getElementById("github-url-dropdown");
+        if (!(urlObj[flatiron.url])) {
+            urlObj[flatiron.url] = true;
+            urlOption = document.createElement("option");
+            urlOption.text = flatiron.url;
+            urlDropdown.add(urlOption);
+        }
+        if ((!(githubUrlObj[flatiron.githuburl])) && flatiron.githuburl) {
+            githubUrlObj[flatiron.githuburl] = true;
+            githubUrlOption = document.createElement("option")
+            githubUrlOption.text = flatiron.githuburl;
+            githubUrlDropdown.add(githubUrlOption);
+        }
+        renderFlatiron(flatiron.id,flatiron.url,flatiron.quote,flatiron.comment,flatiron.datetime,flatiron.githuburl);
+    });
 }
 
 function renderFlatiron(flatironId,flatironUrl,flatironQuote,flatironComment,flatironDatetime,flatironGithubUrl="") {
