@@ -1,28 +1,212 @@
 {
   "flatirons": [
     {
-      "url": "https://learning.flatironschool.com/courses/5703/pages/setting-up-wsl2?module_item_id=382243",
-      "quote": "the dropdown in the terminal that says \"1: powershell\" ",
-      "comment": "Change to: the \"+\" dropdown in the terminal next to \"powershell\"",
+      "url": "https://learning.flatironschool.com/courses/5703/pages/programming-with-expressions?module_item_id=382268",
+      "githuburl": "",
+      "quote": "Now we're going to learn how we can use the code window to make it easier to write, test, and experiment with code. Go ahead and open replit (https://replit.com/languages/javascript)",
+      "comment": "Replit.com has a new mode called \"Spooky\" that is pretty much unreadable that is used by default if you do not have an account. Go to https://replit.com/languages/javascript on a clean browser (i.e. no account), and spooky will be used by default. Notice that instead of \"1 console.log('Hello, world!')\", it looks like \"1 .log[]'Hello, World'[]\" . This is easy to replicate by creating a replit account, selecting Dark or Light as your theme, typing the aforementioned, then changing the theme to \"spooky\" and it becomes unreadable. You should interact with replit to get them to change the default no-account display, or update your course materials, or consider an alternative like codepen.",
+      "datetime": "Tuesday April 5, 2022, 9:01:00 PM",
       "id": 1
     },
     {
-      "url": "https://learning.flatironschool.com/courses/5703/pages/installing-node-dot-js-on-wsl2?module_item_id=382244",
-      "quote": "Action Item 2",
-      "comment": "Add: Note, you can paste into Ubuntu using Ctrl+Shift+V, but you may need to enable the option in Properties, which is accessible by right clicking the top menu bar of the Ubuntu appliaction (https://stackoverflow.com/questions/38832230/copy-paste-in-bash-on-ubuntu-on-windows/50050642#50050642)",
+      "url": "https://learning.flatironschool.com/courses/5703/pages/selection-with-conditionals-the-switch-statement?module_item_id=382273",
+      "githuburl": "",
+      "quote": "if (name === \"Alice\") { ... }",
+      "comment": "Why no semicolons after {} code blocks?  I'm still not convinced that if statements with curly braces and function declarations (which are still statements, if I am correct) should not have semicolons.",
+      "datetime": "Wednesday, April 6, 2022, 3:21:10 PM",
       "id": 2
     },
     {
-      "url": "https://learning.flatironschool.com/courses/5703/pages/windows-wsl2-ruby-installation?module_item_id=382245",
-      "quote": "Type gem update --system and press <Enter>",
-      "comment": "Add: Note, this step can take several minutes, though it may appear \"stuck\" on the line containing \"Installing darkfish documentation for rubygems-update\".  After the installation is successful, if you cannot type the next step, close and reopen Ubuntu.",
+      "url": "https://learning.flatironschool.com/courses/5703/pages/setting-up-wsl2?module_item_id=382243",
+      "githuburl": "",
+      "quote": "switch (name) {    case \"Sleepy\":    case \"Sneezy\":    case \"Happy\":    case \"Grumpy\":    case \"Bashful\":    case \"Dopey\":    case \"Doc\":    characterType = \"dwarf\";    break;",
+      "comment": "Switch is never the cleanest or shortest solution in any of these.  All you save with a switch is removing the \"variable ===\" but you have to add a \"break\" and an extra line if you are using else ifs.  If you're not using else ifs, then you could probably concatentate, instead of a new line for each dwarf you could do a number of OR expressions in a single line of an if.",
+      "datetime": "Wednesday, April 6, 2022, 3:21:10 PM",
       "id": 3
     },
     {
-      "url": "https://learning.flatironschool.com/courses/5703/pages/configuring-git-and-github-on-wsl2?module_item_id=382246",
-      "quote": "Type \"My personal PC\"",
-      "comment": "Change to: Type \"My PC\" ||| (Or is this a joke??? Does it later get mentioned in the class on Recursion? If so you can take that joke to the bank and deposit it into the ATM Machine.)",
+      "url": "https://learning.flatironschool.com/courses/5703/quizzes/28331?module_item_id=382276",
+      "githuburl": "",
+      "quote": "How many hours did you spend working on the Programming as Conversation Part 1 module?",
+      "comment": "Change to: How many hours did you spend working on the Programming as Conversation Part 2 module?",
+      "datetime": "Wednesday, April 6, 2022, 3:37:00 PM",
       "id": 4
+    },
+    {
+      "url": " https://learning.flatironschool.com/courses/5703/assignments/174655?module_item_id=382278",
+      "githuburl": "",
+      "quote": "Then, in your terminal: 3. Make sure you're in Development/code (or wherever you're storing your code for the course) and clone the repo to your local machine with git clone followed by the git URL you copied.",
+      "comment": "It's very easy to get all the way to https://learning.flatironschool.com/courses/5703/assignments/174655?module_item_id=382278 and not know you had to do the set up local enviornment steps.  Probably a big giant note at the top should say \"NOTE: You should already have done the \"Introduction to the Local Enviornment Setup Instructions\" before this module.\" and link to https://learning.flatironschool.com/courses/5703/pages/introduction-to-the-local-environment-setup-instructions?module_item_id=382232",
+      "datetime": "Wednesday, May 5, 2022, 7:01:00 PM",
+      "id": 5
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/setting-up-wsl2?module_item_id=382243",
+      "githuburl": "",
+      "quote": "the dropdown in the terminal that says \"1: powershell\" ",
+      "comment": "Change to: the \"+\" dropdown in the terminal next to \"powershell\"",
+      "datetime": "Thursday, May 5, 2022, 8:48:20 PM",
+      "id": 6
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/installing-node-dot-js-on-wsl2?module_item_id=382244",
+      "githuburl": "",
+      "quote": "Action Item 2",
+      "comment": "Add: Note, you can paste into Ubuntu using Ctrl+Shift+V, but you may need to enable the option in Properties, which is accessible by right clicking the top menu bar of the Ubuntu appliaction (https://stackoverflow.com/questions/38832230/copy-paste-in-bash-on-ubuntu-on-windows/50050642#50050642)",
+      "datetime": "Thursday, May 5, 2022, 8:48:20 PM",
+      "id": 7
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/windows-wsl2-ruby-installation?module_item_id=382245",
+      "githuburl": "",
+      "quote": "Type gem update --system and press <Enter>",
+      "comment": "Add: Note, this step can take several minutes, though it may appear \"stuck\" on the line containing \"Installing darkfish documentation for rubygems-update\".  After the installation is successful, if you cannot type the next step, close and reopen Ubuntu.",
+      "datetime": "Thursday, May 5, 2022, 8:48:20 PM",
+      "id": 8
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/configuring-git-and-github-on-wsl2?module_item_id=382246",
+      "githuburl": "",
+      "quote": "Type \"My personal PC\"",
+      "comment": "Change to: Type \"My PC\" (Or is this a joke??? Does it later get mentioned in the class on Recursion? If so you can take that joke to the bank and deposit it into the ATM Machine.)",
+      "datetime": "Thursday, May 5, 2022, 8:48:20 PM",
+      "id": 9
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/working-with-files-and-directories-in-the-cli?module_item_id=38225",
+      "githuburl": "",
+      "quote": "In a new terminal, which automatically puts you in your home directory, try this:   ls",
+      "comment": "maybe show people how to fix that terribly unreadable blue color https://github.com/microsoft/WSL/issues/930   (I changed Blue text color to RGB 0 187 187, similar to comment by \"ProfessorGram\" in that link.)",
+      "datetime": "Saturday, May 14, 2022, 12:31:26 PM",
+      "id": 10
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/working-with-files-and-directories-in-the-cli?module_item_id=382253",
+      "githuburl": "",
+      "quote": "mv path_to_file/filename ./",
+      "comment": "why is it: mv path_to_file/filename ./  and not: mv path_to_file/filename .  I tested it, and that worked fine.",
+      "datetime": "Saturday, May 14, 2022, 12:31:26 PM",
+      "id": 11
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/organizing-your-work-for-this-course?module_item_id=382254",
+      "githuburl": "",
+      "quote": "For Windows users, follow along with this video: (https://www.youtube.com/watch?v=EwLe9M4xZlk)",
+      "comment": "text doesn't cover all that's in youtube.  Wouldn't know where to put phase-1 through -5.  Using up arrow or explorer.exe.  Prefer I didn't /have/ to watch videos--particularly youtube ones.",
+      "datetime": "Sunday, May 15, 2022, 5:34:33 PM",
+      "id": 12
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174633?module_item_id=382255",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-completing-assignments",
+      "quote": "Note: The process we'll go through in this lesson will create sub-folders automatically. Whenever you are starting a new assignment, navigate back to your main prework folder (cd ~/Development/code/prework) before cloning the assignment to ensure these sub-folders don't get created within each other.",
+      "comment": "This suggests that in Ubuntu I should go to /prework.  So I went there in Ubuntu.  But this \"navigate to where you'd like to download the assignment (e.g. cd ~/Development/code)\" suggest I should not go into a \"prework\" folder.  The former has more strong language, the latter says \"e.g.\" not \"i.e.\".  I cd .., but it was confusing.",
+      "datetime": "Sunday, May 15, 2022, 5:34:33 PM",
+      "id": 13
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174633?module_item_id=382255",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-completing-assignments",
+      "quote": "git clone git@github.com:<your-user-name>/phase-0-completing-assignments.git",
+      "comment": "Got this error while trying to clone \"The authenticity of host 'github.com (192.30.255.112)' can't be established.\" Acording to https://stackoverflow.com/questions/47707922/error-the-authenticity-of-host-github-com-cant-be-established-rsa-key-finge , I can allow it, beacuse it matches the github page.  But you should warn students if they get this.",
+      "datetime": "Sunday, May 15, 2022, 5:34:33 PM",
+      "id": 14
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174633?module_item_id=382255",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-completing-assignments",
+      "quote": "Run learn test in the terminal.",
+      "comment": " Got these warnings when doing \"learn test\"  npm WARN deprecated har-validator@5.1.5: this library is no longer supported npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details. npm WARN deprecated mkdirp@0.5.4: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.) npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797) npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142",
+      "datetime": "Sunday, May 15, 2022, 5:34:33 PM",
+      "id": 15
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174655?module_item_id=382278",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-pac-3-what-is-a-test",
+      "quote": "git clone git@github.com:<your-github-username>/phase-0-html-experiencing-html-lab.git",
+      "comment": "Change to: git clone git@github.com:<your-github-username>/phase-0-pac-3-what-is-a-test-lab.git",
+      "datetime": "Sunday, May 15, 2022, 5:34:33 PM",
+      "id": 16
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174655?module_item_id=382278",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-pac-3-what-is-a-test",
+      "quote": "cd phase-0-pac-3-what-is-a-test-lab.git",
+      "comment": "Change to: cd phase-0-pac-3-what-is-a-test",
+      "datetime": "Sunday, May 15, 2022, 5:34:33 PM",
+      "id": 17
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174655?module_item_id=382278",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-pac-3-what-is-a-test",
+      "quote": "Go to your repository in GitHub and copy the URL. Note, this should be copied from the browser's address bar, and should start with https://github.com/",
+      "comment": "This is confusing...  Is this https://github.com/<your-github-username>/phase-0-pac-3-what-is-a-test ?  https://github.com/<your-github-username>/phase-0-pac-3-what-is-a-test/tree/fis-wip ?  In the next lesson, would it be the page(s) I made any change(s)? https://github.com/<your-github-username>/phase-0-pac-3-what-is-a-test/blob/fis-wip/index.js ? I suspect since there might be multiple pages, and the branch should be fairly easy to find, the correct page is just: https://github.com/<your-github-username>/phase-0-pac-3-what-is-a-test .  But this should be explained so there's less confusion.",
+      "datetime": "Sunday, May 15, 2022, 5:34:33 PM",
+      "id": 18
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174656?module_item_id=382279",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-pac-3-what-is-a-test-lab",
+      "quote": "Learn about testing in JavaScript",
+      "comment": "This section has a lot of repetition from previous lesson for unknown reasons.  My guess is the previous lesson was written AFTER this one, and this one didn't get updated accordingly.  Remove a lot of repetition.",
+      "datetime": "Sunday, May 15, 2022, 5:34:33 PM",
+      "id": 19
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174656?module_item_id=382279",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-pac-3-what-is-a-test-lab",
+      "quote": " They are located in the test folder inside a file named index-test.js.",
+      "comment": "Change to: They are located in the test folder inside a file named index-test.js.  Open the file and remove the lines with \"/*\" and */\" and then save.",
+      "datetime": "Sunday, May 15, 2022, 5:34:33 PM",
+      "id": 20
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/introduction-to-working-with-data-structures?module_item_id=382285",
+      "githuburl": "",
+      "quote": "Another way of thinking about Arrays is that they are like tables that have an identifier that is a Number. If we let the identifier be a String instead of an Number, then we'd basically be describing an Object.",
+      "comment": "if identifier = number    then thing = array if identifier = string    then thing = object if number != string    then array != object  But aren't arrays a type of object?  I mean literally, the typeof object?",
+      "datetime": "Monday, May 23, 2022, 9:39:38 PM",
+      "id": 21
+    },
+    {
+      "url": " https://learning.flatironschool.com/courses/5703/pages/arrays?module_item_id=382286",
+      "githuburl": "",
+      "quote": "(which isn't surprising, given that Arrays are a special type of Object)",
+      "comment": "See last comment",
+      "datetime": "Monday, May 23, 2022, 9:39:38 PM",
+      "id": 22
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/array-methods?module_item_id=382287",
+      "githuburl": "",
+      "quote": "We can also provide one or two arguments to .slice(): the first is the index where the slice should begin and the second is the index before which it should end:",
+      "comment": "Would this be true if an index was missing?  Or is somethng like this not an array any more? {0:10, 10:11, 100:12}  It uses numbers, just not sequential.  (Note, nothing in previous lecture said arrays needed to be sequential--but it seems they do need to be.)",
+      "datetime": "Monday, May 23, 2022, 9:39:38 PM",
+      "id": 23
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/array-methods?module_item_id=382287",
+      "githuburl": "",
+      "quote": "Method: Spread operator (...), What it does: Add element(s) to beginning or end of array",
+      "comment": "Change to: Method: Spread operator (...), What it does: expands element(s) of array, usually to add to beginning, middle, or end of array (italicize operator)",
+      "datetime": "Monday, May 23, 2022, 9:39:38 PM",
+      "id": 24
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/array-methods?module_item_id=382287",
+      "githuburl": "",
+      "quote": "Method: .slice(), What it does: Remove 0 or more elements, Return value: A new array containing the removed elements",
+      "comment": "Change to: Method: .slice(), What it does: Retrieve 0 or more elements, Return value: A new array containing the replaced element(s)",
+      "datetime": "Monday, May 23, 2022, 9:39:38 PM",
+      "id": 25
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/modifying-objects?module_item_id=382290",
+      "githuburl": "",
+      "quote": "Let's use the spread operator to copy all of the old menu Object's properties into a new Object: ... This will create a clone of the original object and save it into a new variable.",
+      "comment": "But that's not entirely true.  In previous lesson we learned that spread is shallow not deep.  Because we've created a pointer to CheesePlate, not a copy of CheesePlate.  function UpdateObject(obj, key, value) {   const newObj = {...obj};   newObj[key] = value; //Why are we using bracket notation here?    return newObj; }  const mondayMenu = {   cheesePlate: {     soft: \"Chèvre\",     semiSoft: \"Gruyère\",     hard: \"Manchego\",   },   fries: \"Sweet potato\",   salad: \"Cobb\", };  const tuesdayMenu = UpdateObject(mondayMenu, \"salad\", \"Caesar\");  tuesdayMenu.cheesePlate.soft = \"Brie\";  mondayMenu.cheesePlate.soft; //=> \"Brie\"  tuesdayMenu.cheesePlate.soft; //=> \"Brie\"",
+      "datetime": "Thursday, May 26, 2022, 7:26:56 PM",
+      "id": 26
     }
   ]
 }
