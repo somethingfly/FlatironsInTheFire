@@ -134,8 +134,8 @@ function createFlatironForm() {
     const form = document.createElement("form");
     const inputUrl = document.createElement("input");
     const inputGithubUrl = document.createElement("input");
-    const inputQuote = document.createElement("input");
-    const inputComment = document.createElement("input");
+    const inputQuote = document.createElement("textarea");
+    const inputComment = document.createElement("textarea");
     const inputDatetime = document.createElement("input");
     const create = document.createElement("button");
     form.id = "flatiron-form";

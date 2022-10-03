@@ -1,6 +1,6 @@
 # FlatironsInTheFire
 
-The project is also a blog.  Be sure to run flatirons.json in your terminal to read the blog:
+The project is also a ~~blog~~ bug tracker with actual bugs, most of which probably still need to be fixed.  Be sure to run flatirons.json in your terminal to read the ~~blog~~ bugs:
 
 `json-server flatirons.json` 
 
@@ -23,3 +23,7 @@ What to do then?  Well, I wrote the url down in a notepad .txt, along with whate
 Well, the end of Phase 1 requires both: A) a blog B) a project.  And I am, again, behind in my progress, per the aforementioned "perpetually."  I need to kill two birds with one stone.  Or, rather, two reqs with one commit.  Also gotta be DRY.  (Which, I have in one of my notepad .txts, was used as an acronym often, but never actually spelled out in any of the course materials [until finally in the instructions for this project](https://github.com/learn-co-curriculum/phase-1-javascript-project-mode).  DRY, by the way, stands for "Don't Repeat Yourself."  And, yes, one should be DRY.  But one should actually DMALTFT: "Do Mention At Least The First Time.")
 
 I have to admit, there kinda already are plenty of blogging solutions out there.  But I need to pick a project that isn't too ambitious a project.  Because... I know I gotta be DRY, but I also gotta mention this third time...  that I am super behind.  Like, I-gotta-do-this-project-_this-weekend_-or-I-am-going-to-get-kicked-out behind.  I wish it was because I was lazy.  Seriously.  Because then I would only have one thing holding me back that I would need to fix.  But the reality is I have _a lot_ of other things going on right now.  I got way too many irons in the fire...  Now I got Flatirons in the fire too.
+
+### Update
+
+UPDATE 10/2/22: Well, during my Phase 1 review, my reviewer said this app I created for keeping track of bugs was not a blog but... well... a bug tracker.  I had to concede that he was right.  Apparently, I could still pass based on this app if I then wrote a real blog entry, [which I did](https://medium.com/@somethingfly/just-how-deep-a-copy-is-deep-enough-for-a-javascript-object-33e9cd937f6a).  So, Flatirons in the Fire is not a blog.  Flatiron in the Fire is a bug tracker.

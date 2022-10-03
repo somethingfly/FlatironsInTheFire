@@ -204,9 +204,113 @@
       "url": "https://learning.flatironschool.com/courses/5703/pages/modifying-objects?module_item_id=382290",
       "githuburl": "",
       "quote": "Let's use the spread operator to copy all of the old menu Object's properties into a new Object: ... This will create a clone of the original object and save it into a new variable.",
-      "comment": "But that's not entirely true.  In previous lesson we learned that spread is shallow not deep.  Because we've created a pointer to CheesePlate, not a copy of CheesePlate.  function UpdateObject(obj, key, value) {   const newObj = {...obj};   newObj[key] = value; //Why are we using bracket notation here?    return newObj; }  const mondayMenu = {   cheesePlate: {     soft: \"Chèvre\",     semiSoft: \"Gruyère\",     hard: \"Manchego\",   },   fries: \"Sweet potato\",   salad: \"Cobb\", };  const tuesdayMenu = UpdateObject(mondayMenu, \"salad\", \"Caesar\");  tuesdayMenu.cheesePlate.soft = \"Brie\";  mondayMenu.cheesePlate.soft; //=> \"Brie\"  tuesdayMenu.cheesePlate.soft; //=> \"Brie\"",
+      "comment": "But that's not entirely true.  Because we've created a pointer to CheesePlate, not a copy of CheesePlate.\nfunction UpdateObject(obj, key, value) {\n  const newObj = {...obj};\n  newObj[key] = value; //Why are we using bracket notation here?\n  return newObj;\n}\nconst mondayMenu = {\n  cheesePlate: {\n    soft: \"Chèvre\",\n    semiSoft: \"Gruyère\",\n    hard: \"Manchego\",\n  },\n  fries: \"Sweet potato\",\n  salad: \"Cobb\",\n};\nconst tuesdayMenu = UpdateObject(mondayMenu, \"salad\", \"Caesar\");\ntuesdayMenu.cheesePlate.soft = \"Brie\";\nmondayMenu.cheesePlate.soft;\n//=> \"Brie\"\ntuesdayMenu.cheesePlate.soft;\n//=> \"Brie\"e\"",
       "datetime": "Thursday, May 26, 2022, 7:26:56 PM",
       "id": 26
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174651?module_item_id=382294",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-intro-to-js-2-looping-code-along",
+      "quote": "n the above code, let age = 30 is the initialization: we're creating a variable, age, that we'll use in the next three phases of the loop.",
+      "comment": "What is a \"phases\" in this context?  Condition, iteration, loop body?  Those were defined as \"statements\" earlier.  If it's supposed to be \"statements\" use \"statements\", else define \"phases.\"",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 27
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/traversing-nested-objects?module_item_id=382296",
+      "githuburl": "",
+      "quote": "letters[1]; //=> [\"b\", [\"c\", [\"d\", [\"e\"]], \"f\"]]",
+      "comment": "Actually in repl, https://replit.com/languages/javascript, it shows  \" letters[1]; ['b', ['c', [ 'd', [Array] ], 'f' ] ] \"  the rest appear as expected, same as the instruction materials, e.g.  \" letters[1][1]; //=> [\"c\", [\"d\", [\"e\"]], \"f\"] \"   why does \"letters[1]\" appears this way? something to do with repl only going, say, 4 levels deep?",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 28
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/a-quick-tour-of-the-web?module_item_id=382298",
+      "githuburl": "",
+      "quote": "A computer fulfilling a client role has the responsibility of presenting the data that is sent from the server. Historically, these machines could be more lightly equipped (and thus cheaper). You'll generally see them drawn in diagrams or on whiteboards as laptops.",
+      "comment": "Actually, you'll typically see something with a screen.  https://www.google.com/search?q=client+network+diagram&tbm=isch  That might be a laptop, or it could be monitor with a tower, or it could just be a monitor.  That's because a client is typically what we use to \"see\" the data and server is typically used just to store and send the data.  Once a server is up and running, we typically don't need a monitor attached, but a client will typically always need a monitor.",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 29
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/a-quick-tour-of-the-web?module_item_id=382298",
+      "githuburl": "",
+      "quote": "And this is the essence of how the web works!",
+      "comment": "This webpage is a good place to explain web 3.0 and how it compares with web 2.0",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 30
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174638?module_item_id=382302",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-html-document-structure-lab",
+      "quote": "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" >",
+      "comment": "Why no /> close tag?  Even the view-source:https://learning.flatironschool.com/courses/5703/assignments/174638?module_item_id=382302 page has examples where the link tag has no close.  There seems to be no consistency.  Shouldn't we be encouraging closing tags, even this early?  Further the next code example shows the \"/>\" and would likely cause confusion for new students to html.",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 31
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174638?module_item_id=382302",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-html-document-structure-lab",
+      "quote": "<link\n  rel=\"stylesheet\"\n  href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\"\n/>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"company.css\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"engineering-department.css\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"project-x-launch.css\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"typography.css\" />\n...\n<title>My Site Title</title>\nNotice that unlike the previous tags we've discussed, title has an opening and closing tag.",
+      "comment": "This isn't true.  Link has close tags in the example.  And apparently should have them for XHTML:\n\"The <link> tag is empty, which means that the closing tag isn’t required. It contains only attributes. But in XHTML, the (<link>) tag must be closed (<link/>).\"\nhttps://www.w3docs.com/learn-html/html-link-tag.html",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 32
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/html-lists-images-and-links?module_item_id=382306",
+      "githuburl": "",
+      "quote": "There are two notable things about the img tag: The first is that it does not have a closing tag. The image tag closes itself.",
+      "comment": "I would argue if it is self-closing, which it is in the example, then it has a closing tag, it just happens to be part of the opening tag, which is also a self-closing tag.  (This might be overly pedantic.)",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 33
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174646?module_item_id=382319",
+      "githuburl": "https://learning.flatironschool.com/courses/5703/assignments/174646?module_item_id=382319",
+      "quote": "Now, what is a relative path? You could write href=\"style.css\" and the content of style.css would change your index.html file. But we want to teach you to require external resources (like CSS or JavaScript) by using relative paths.",
+      "comment": "That /is/ a relative path, it's just not as \"crystal clear\" (to use Flatiron's term) as starting with \"./\". ",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 34
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/pages/css-fundamentals?module_item_id=382320",
+      "githuburl": "",
+      "quote": "#ffffff makes white since 255 reds, 255 greens, and 255 blues equal the maximum of each of the colors.",
+      "comment": "what's not clear is why ff equals 255, I suggest something similar to dblue's answer https://forum.renoise.com/t/hexadecimal-how-does-ff-255/42658",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 35
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174653?module_item_id=382323",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-css-rainbow-lab",
+      "quote": "Some tags are self-closing like the line break element <br>.",
+      "comment": "Change to: Some tags are self-closing like the line break element <br />.",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 36
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174653?module_item_id=382323",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-css-rainbow-lab",
+      "quote": "  <link rel=\"stylesheet\" type=\"text/css\" href=\"./main.css\" />",
+      "comment": "Why is this the only time you put in \"type=\"text/css\" \" -- if there's a best practice, it should be done each time.",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 37
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174653?module_item_id=382323",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-css-rainbow-lab",
+      "quote": "So let's give the outermost div the id red.",
+      "comment": "Is this good practice?  Shouldn't it be topColor, firstRainbowBand or something?",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 38
+    },
+    {
+      "url": "https://learning.flatironschool.com/courses/5703/assignments/174630?module_item_id=382325",
+      "githuburl": "https://github.com/learn-co-curriculum/phase-0-css-graffiti-lab",
+      "quote": "Imagine that you are walking down the street, and you notice that there's a mural that has been painted over with various graffiti tags.",
+      "comment": "There was no mural under the graffiti.  Instructions are confusing because the intro causes us to be expecting a mural.  There's only the conclusion which says it is a blank wall under graffiti: \"With the dev tools and resources on CSS specificity rules, work your way through all seven graffiti pictures until the wall is fully clean. \"",
+      "datetime": "Sunday, May 29, 2022, 7:56:07 PM",
+      "id": 39
     }
   ]
 }
